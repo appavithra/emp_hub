@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#root{
+    height: 100vh; 
+    background-image: linear-gradient(to bottom right, #AED6F1,white,#D6EAF8 );
+}
+
+/* Narbar */
+
+nav{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: rgba(88, 30, 141, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+}
+
+nav .logo{
+    color: white;
+    font-family: "Protest Riot", sans-serif;
+}
+
+.logo #l1{
+    font-size: 30px;
+}
+.logo #l2{
+    font-size: 35px;
+    color: orange;
+}
+
+.naviLink ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.naviLink ul li {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    font-family: "Protest Riot", sans-serif;
+}
+  
+.naviLink ul li span {
+    margin-right: 8px;
+}
+.naviLink ul li .icon {
+    font-size: 20px;
+}
+
+.naviLink ul li .iconName {
+    color: orange;
+    font-size: 15px;
+}
+
+  
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+  
+ul a:hover {
+    opacity: 0.7;
+}  
+
+/* home page */
+
+.innerContainer{
+    background-color: #F2F3F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 70vh;
+    margin: 70px 0px 5px 250px;
+    box-shadow: 2px 2px 5px 1px #85929E;
+    border-radius: 8px;
+}
+
+.leftContainer {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 70vh;
+    /* background-color: aqua; */
+
+}
+  
+ .leftContainer h2 {
+    margin: 80px 0; 
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(rgb(52, 3, 66), rgb(208, 127, 233));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 30px;
+    
+}
+
+.leftContainer form{
+    /* background-color: brown; */
+    height: 35vh;
+    width: 250px;
+   
+    
+}
+.leftContainer input {
+    padding: 6px;
+    margin: 0 0 19px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #5B2C6F;
+    outline: none;
+    
+}
+.leftContainer button {
+    padding: 6px;
+    margin-top: 22px;
+    background-color:#5B2C6F; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: "Protest Riot", sans-serif;
+    font-style: normal;
+    
+}
+.leftContainer button:hover {
+    background-color: #A569BD; 
+}
+ 
+.rightContainer {
+    flex: 1; 
+    background-image: url('/public/react_girl.jpeg'); 
+    background-size: cover; 
+    background-position: center;
+    background-color: aqua;
+    height: 70vh;
+    border-radius: 0px 8px 8px 0px;
+    width: 450px;
+}  
+   
+
+/* viewall */
+
+#viewHead{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(rgb(52, 3, 66), rgb(208, 127, 233));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+    height: auto;
+    margin-top: 45px;
+    align-items: center;
+    
+}
+
+td,th{
+    border: 2px solid #5B2C6F;
+    padding: 5px;
+    text-align: center;
+}
+
+table td button{
+    background-color: #D2B4DE ;
+    color: white;
+}
+
+table td #tableDel{
+    color: rgb(223, 52, 52);
+   
+}
+table td #tableEdit{
+    color:black;
+   
+}
+table td #tableMore{
+    color: black;
+    font-size: 15px;
+   
+}
+
+
+/* edit */
+
+.editContainer h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Protest Riot", sans-serif;
+    background: linear-gradient(orange, rgb(208, 127, 233));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.editContainer .editInnerContainer{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 0 0 36%;
+    height: 52vh;
+    border-radius: 15px;
+    border: 1px solid #A569BD;
+    opacity: 20px;
+    background-color: rgba(147, 112, 219, 0.1);
+    box-shadow: 2px 3px 8px #D2B4DE;
+}
+
+.editContainer form{
+    height: 200px;
+    width: 200px;
+}
+
+
+.editContainer form input{
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #5B2C6F ;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.editContainer form button{
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 6px;
+    background-color: #A569BD;
+    border: 1px solid orange;
+    border-radius: 9px;
+    color: white;
+    font-size: 18px;
+    font-family: "Protest Riot", sans-serif;
+}
+
+
+/* viewmore  */
+
+.viewmoreContainer{
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right,white,#A9CCE3 ,white);
+
+
+}
+
+.singleEmp{
+    background-color: aqua;
+    width:30% ;
+    display: flex;
+    margin: 7% 0 0 34%;
+    flex-direction: column;
+    height: 60vh;
+    background-color: rgba(253, 254, 254 , 0.3);
+    border-radius: 16px;
+    box-shadow: 2px 3px 8px #391049;
+
+    
+}
+
+.viewmoreContainer #viewbuttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.viewmoreContainer #viewbuttons button{
+    padding: 6px;
+    margin-top: 35px;
+    background-color:#5B2C6F; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Protest Riot", sans-serif;
+}
+
+.viewmoreContainer #viewbuttons button:hover{
+    background-color: #A569BD;
+}
+
+.singleEmp h3{
+    /* color: wheat; */
+    margin: 60px 0 0 70px;
+}
+
+.singleEmp h3 span{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(rgb(52, 3, 66), #ff00ca);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 24px;
+    
+}
+
+
+/* pagenotfound */
+
+.errorPage{
+    /* background-color: #391049; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* justify-content: space-around; */
+}
+
+.errorPage h1{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.errorPage p{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.errorPage .pageErrorImg{
+    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/not-found-7621869-6167023.png");
+    width: 600px;
+    height: 700px;
+    margin-left: 300px;
+}
